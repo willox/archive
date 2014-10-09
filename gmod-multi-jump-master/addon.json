@@ -1,0 +1,13 @@
+{
+    "ignore": [
+        ".git/*",
+        "LICENSE",
+        "README.md"
+    ], 
+    "tags": [
+        "fun"
+    ], 
+    "title": "Double Jump!", 
+    "type": "effects", 
+    "workshopid": 284538302
+}

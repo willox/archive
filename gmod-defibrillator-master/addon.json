@@ -1,0 +1,13 @@
+{
+    "ignore": [
+        "*.psd", 
+        "*.vcproj", 
+        "*.svn*"
+    ], 
+    "tags": [
+        "fans",
+    ], 
+    "title": "Defibrillator - Trouble in Terrorist Town", 
+    "type": "weapon", 
+    "workshopid": 162581348
+}

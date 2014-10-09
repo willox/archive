@@ -1,0 +1,155 @@
+@font-face {
+	font-family: 'coolvetica';
+	src: url('asset://resource/fonts/coolvetica.ttf');
+	font-weight: 500;
+}
+
+body {
+	background-color: rgb(250, 250, 250);
+
+	margin: 0;
+	padding: 0;
+}
+
+#headline {
+	margin-top: 24px;
+
+	font-family: 'coolvetica', 'helvetica', 'arial', sans-serif;
+	font-size: 22px;
+	color: rgb(201, 201, 201);
+
+	text-align: center;
+}
+
+@-webkit-keyframes spinner {
+	0% { -webkit-transform: rotate(360deg); } /* anti-clockwise */
+	100% { -webkit-transform: rotate(0deg); }
+}
+
+#spinner {
+	background-image: url('asset://garrysmod/bin/loading/spinner.png');
+	background-position: center top;
+
+	position: absolute;
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+	left: 50%;
+	top: 25%;
+	margin: -64px 0 0 -64px;
+
+	-webkit-animation: spinner 2s infinite linear;
+	z-index: 1;
+}
+
+#logo {
+	background-image: url('asset://garrysmod/bin/loading/logo.png');
+	background-position: center top;
+
+	position: absolute;
+	display: inline-block;
+	width: 54px;
+	height: 54px;
+	left: 50%;
+	top: 25%;
+	margin: -27px 0 0 -27px;
+
+	z-index: 2;
+}
+
+#messages {
+	text-align: center;
+
+	position: absolute;
+	top: 50%;
+
+	width: 100%;
+	height: 50%;
+
+	overflow: hidden;
+}
+
+.message {
+	font-family: 'coolvetica', 'helvetica', 'arial', sans-serif;
+	font-size: 22px;
+	color: rgb(121, 121, 121);
+
+	margin-bottom: 4px;
+}
+
+#icon_container {
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	z-index: 3;
+	overflow: hidden;
+}
+
+@-webkit-keyframes icon {
+	0% {
+		margin-top: 0px;
+		opacity: 1;
+	}
+
+	100% {
+		margin-top: -80px;
+		opacity: 0;
+	}
+}
+
+.icon {
+	position: absolute;
+	display: inline-block;
+
+	opacity: 0;
+	top: 24%;
+	left: 25%;
+
+	width: 16px;
+	height: 16px;
+
+	background-position: bottom middle;
+	background-repeat: no-repeat;
+
+	-webkit-animation: icon 3s 1 linear;
+}
+
+.icon-box {
+	background-image: url('asset://garrysmod/materials/icon16/box.png');
+}
+
+.icon-palette {
+	background-image: url('asset://garrysmod/materials/icon16/palette.png');
+}
+
+.icon-brick {
+	background-image: url('asset://garrysmod/materials/icon16/brick.png');
+}
+
+.icon-sound {
+	background-image: url('asset://garrysmod/materials/icon16/sound.png');
+}
+
+.icon-world {
+	background-image: url('asset://garrysmod/materials/icon16/world.png');
+}
+
+.icon-table_edit {
+	background-image: url('asset://garrysmod/materials/icon16/table_edit.png');
+}
+
+.icon-font {
+	background-image: url('asset://garrysmod/materials/icon16/font.png');
+}
+
+.icon-page {
+	background-image: url('asset://garrysmod/materials/icon16/page.png');
+}
+
+.icon-bomb {
+	background-image: url('asset://garrysmod/materials/icon16/bomb.png');
+}
